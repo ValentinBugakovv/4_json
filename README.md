@@ -4,7 +4,18 @@
 
 # Quickstart
 
-[TODO]
+```python
+# для работы программы необходимо установить модуль json
+import json
+
+# Функция def load_data принимет на вход путь до файла и декодирует json в строку
+def load_data(filepath):
+return json.load(path)
+
+# Функция def pretty_print_json преобразует строку и возращает красиво отформатированый json файл
+def pretty_print_json(load_data)
+
+```
 
 Example of script launch on Linux, Python 3.5:
 
