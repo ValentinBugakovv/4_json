@@ -1,6 +1,6 @@
 # Prettify JSON
 
-[Программа форматирует json файл, красиво печатая его] 
+Программа форматирует json файл, красиво печатая его 
 
 # Quickstart
 
@@ -11,6 +11,9 @@ Example of script launch on Linux, Python 3.5:
 ```bash
 
 $ python pprint_json.py <path to file>
+
+```
+```json
 # пример вывода
 [
     {
