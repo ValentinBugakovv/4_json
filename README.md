@@ -1,6 +1,6 @@
 # Prettify JSON
 
-[TODO. There will be project description]
+[Программа форматирует json файл, красиво печатая его] 
 
 # Quickstart
 
@@ -11,7 +11,19 @@ Example of script launch on Linux, Python 3.5:
 ```bash
 
 $ python pprint_json.py <path to file>
-# TODO add output example
+# пример вывода
+[
+    {
+        "name": "<< БУРУНДУКИ 13 SHOP>>",
+        "gid": 55697921,
+        "members_count": 97
+    },
+    {
+        "name": "Проект SweetieBot",
+        "gid": 118486414,
+        "members_count": 1592
+    },
+    ]
 
 ```
 
