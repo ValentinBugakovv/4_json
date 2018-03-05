@@ -13,12 +13,17 @@ def load_data(filepath):
 
 def pretty_print_json(data_result):
     print(json.dumps(data_result, sort_keys=True,
-                     indent=4, ensure_ascii=False, separators=(",", ": ")))
+                     indent=4,
+                     ensure_ascii=False,
+                     separators=(",", ": ")
+                     )
+          )
 
 
 if __name__ == "__main__":
     data_result = load_data(args.filepath)
     pretty_print_json(data_result)
+
 
 
 
