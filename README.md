@@ -12,8 +12,9 @@ import json
 def load_data(filepath):
 return json.load(path)
 
-# Функция def pretty_print_json преобразует строку и возращает красиво отформатированый json файл
-def pretty_print_json(load_data)
+# Функция def pretty_print_json получает на вход результат функции def load_data преобразует строку и возращает красиво отформатированый json файл
+
+def pretty_print_json(result)
 
 ```
 
