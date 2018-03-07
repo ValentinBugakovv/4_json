@@ -3,10 +3,11 @@ import argparse
 import os
 
 
-def user_arguments():
+def input_user_arguments():
     parser = argparse.ArgumentParser(description="Path to json file")
     parser.add_argument("filepath",
-                        help="Path to json file"
+                        nargs="+",
+                        help="Path to json file",
                         )
     args = parser.parse_args()
     return args.filepath
@@ -23,13 +24,14 @@ def pretty_print_json(json_content):
                      indent=4,
                      ensure_ascii=False,
                      separators=(",", ": ")
-     ))
+                     )
+          )
 
 
 def main():
-    fact = user_arguments()
-    if fact.endswith(".json") and os.path.isfile(fact) == True:
-        json_result = load_data(fact)
+    input_result = input_user_arguments()
+    if input_result.endswith(".json") and os.path.isfile(input_result):
+        json_result = load_data(input_result)
         pretty_print_json(json_result)
     else:
         raise ("This is not a json file")
