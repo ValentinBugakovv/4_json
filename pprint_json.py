@@ -30,10 +30,9 @@ def pretty_print_json(json_content):
 
 def main():
     user_path = get_arguments().filepath
-    json_result = load_data(user_path)
-    pretty_print_json(json_result)
+    list_result = load_data(user_path)
+    pretty_print_json(list_result)
 
 
 if __name__ == "__main__":
     main()
-
